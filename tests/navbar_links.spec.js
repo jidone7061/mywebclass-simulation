@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test')
 
-const pagesToCheck = ['/',
-                      '/templates/template-content.html',
+const pagesToCheck = ['index.html',
+                      'template-content.html',
 ]
 
 test('test-valid-navbar-links', async ({browser}) => {
@@ -33,8 +33,8 @@ test('test-valid-navbar-links', async ({browser}) => {
 })
 
 test('navbar-contains-correct-links-and-wording', async ({page}) => {
-    const expectedNavbarLinks = [ ["Home", "/"],
-                                  ["Content Template", "/templates/template-content.html"]
+    const expectedNavbarLinks = [ ["Home", "index.html"],
+                                  ["Content Template", "template-content.html"]
     ]
 
     for (const pageToCheck of pagesToCheck) {

@@ -3,7 +3,7 @@ const { axe, injectAxe, checkA11y } = require('axe-playwright')
 
 test('test-accessibility-homepage', async ({ page }) => {
     // Navigate to the home page
-    await page.goto('/');
+    await page.goto('index.html');
 
     // Inject axe into the page
     await injectAxe(page);
@@ -18,7 +18,7 @@ test('test-accessibility-homepage', async ({ page }) => {
 
 test('test-accessibility-template-content', async ({ page }) => {
     // Navigate to the home page
-    await page.goto('/templates/template-content.html');
+    await page.goto('template-content.html');
 
     // Inject axe into the page
     await injectAxe(page);

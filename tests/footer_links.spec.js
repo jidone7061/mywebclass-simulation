@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test')
 
-const pagesToCheck = ['/',
-                      '/contact.html',
-                      '/templates/template-content.html',
+const pagesToCheck = ['index.html',
+                      'contact.html',
+                      'template-content.html',
 ]
 
 test('test-valid-footer-links', async ({browser}) => {
@@ -35,8 +35,8 @@ test('test-valid-footer-links', async ({browser}) => {
 
 test('footer-contains-correct-links-and-wording', async ({page}) => {
     // 2d array of [words,link]
-    const expectedFooterLinks = [ ["Privacy Policy", "/privacy.html"],
-                                  ["Contact","/contact.html"]
+    const expectedFooterLinks = [ ["Privacy Policy", "privacy.html"],
+                                  ["Contact","contact.html"]
     ]
 
     for (const pageToCheck of pagesToCheck) {

@@ -1,7 +1,7 @@
 
 exports.initialize = function () {
   addScrollOffsetClass()
-  calculateBannerHeight()
+//  calculateBannerHeight()
 }
 
 function calculateBannerHeight () {

@@ -120,6 +120,7 @@ User Stories:
 * As a QA engineer, I want to create a performance test framework using Playwright that can be used to measure site performance in the browser
 * As a QA engineer, I want to integrate the performance test framework with our CI/CD pipeline
 * As a QA engineer, I want to capture and analyze performance data from the automated tests
+* As a Developer, I would like it to be easy to add another page to the playwright accessibility testing so that I can save time to do other things
 
 ### Epic: Develop Performance Testing with Lighthouse
 
