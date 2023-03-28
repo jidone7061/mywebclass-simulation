@@ -21,16 +21,9 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
 		  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-870X719634"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-870X719634');
-	</script>
+	<script src="js/googleAnalytics.js"></script>
 </head>
 
 <body>
@@ -176,8 +169,9 @@
 			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		  </div>
 		  <div class="modal-body">
-			<!-- Privacy Policy Content Goes Here -->
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<p>We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you.</p>
+            <p>We collect your personal data for the purpose of improving your browsing experience, and we will only process it with your consent. By clicking the "Accept" button, you agree to the processing of your personal data in accordance with this policy.</p>
+            <p>To learn more about how we handle your personal data, please read our full <a href="privacy.html">Privacy Policy</a>.</p>
 		  </div>
 		  <div class="modal-footer">
 			<button type="button" class="btn btn-danger" id="declineBtn">Decline</button>
@@ -187,50 +181,10 @@
 	  </div>
 	</div>
 
-
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-	<script>
-	  // Get a reference to the Accept and Decline buttons
-	  var acceptBtn = document.getElementById('acceptBtn');
-	  var declineBtn = document.getElementById('declineBtn');
-
-	  // Check if the privacyAccepted cookie is set
-	  var cookies = document.cookie.split(';');
-	  var privacyAccepted = false;
-	  for (var i = 0; i < cookies.length; i++) {
-		var cookie = cookies[i].trim();
-		if (cookie.indexOf('privacyAccepted=') === 0) {
-		  privacyAccepted = true;
-		  break;
-		}
-	  }
-
-	  if (!privacyAccepted) {
-		// Listen for clicks on the Accept button
-		acceptBtn.addEventListener('click', function() {
-		  // Set a cookie to remember that the privacy policy has been accepted
-		  document.cookie = 'privacyAccepted=true; path=/';
-
-		  // Close the modal
-		  var privacyModal = document.getElementById('privacyModal');
-		  var modalInstance = bootstrap.Modal.getInstance(privacyModal);
-		  modalInstance.hide();
-		});
-
-		// Listen for clicks on the Decline button
-		declineBtn.addEventListener('click', function() {
-		  // Redirect to Google
-		  window.location.href = 'https://www.google.com/';
-		});
-
-		// Show the modal when the page is loaded
-		var privacyModal = document.getElementById('privacyModal');
-		var modalInstance = new bootstrap.Modal(privacyModal);
-		modalInstance.show();
-	  }
-	</script>
+	<script src="js/privacyModal.js"></script>
 
 </body>
 </html>

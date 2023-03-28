@@ -1,6 +1,7 @@
 Tasks can be the following categories: Feature, Bug, Docs, or Devops Task
 
 
+
 | Issue Title                                                                                                                                                                       | Story Points | Issue Link                                                           | Status    | Assigned to | Assigned on | Completed On | Category | Status                        | Notes                                                                                                  |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------|-----------|-------------|-------------|--------------|----------|-------------------------------|--------------------------------------------------------------------------------------------------------|
 | User Story: As a developer, I want to build and test the responsive content template across different screen sizes and devices                                                    | 3            | [#4](https://github.com/jidone7061/mywebclass-simulation/issues/4)   | Completed | kmn6        | 3/13        | 3/14         | Feature  | -                             |                                                                                                        |
@@ -30,5 +31,6 @@ Tasks can be the following categories: Feature, Bug, Docs, or Devops Task
 | -                                                                                                                                                                                 | -            | -                                                                    | -         | -           | -           | -            | -        | -                             |
 | -                                                                                                                                                                                 | -            | -                                                                    | -         | -           | -           | -            | -        | -                             |
 | -                                                                                                                                                                                 | -            | -                                                                    | -         | -           | -           | -            | -        | -                             |
+
 
 

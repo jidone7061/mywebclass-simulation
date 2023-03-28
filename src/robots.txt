@@ -1,6 +1,5 @@
 User-agent: Googlebot
 Allow: /
-Allow: /templates
 User-agent: DuckDuckBot
-Allow: /templates
+Allow: /
 Sitemap: https://jidone7061.github.io/mywebclass-simulation/sitemap.xml
